@@ -10,6 +10,13 @@ Built with React, TypeScript, Vite and Tailwind CSS.
 npm install
 npm run dev
 ```
+## What I built
+
+- The whole dashboard (layout, routing, the 4 pages, shared state, localStorage saving)
+- Simplified the project setup: removed unused files and packages and merged the TypeScript config
+- Refactored the login form into a reusable component
+- GitHub Pages deployment (base path, router basename, 404 fallback, workflow)
+
 
 ## Project structure and why each part exists
 
