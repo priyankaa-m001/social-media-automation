@@ -1,45 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/* Fonts used by the site: Outfit (body) and Urbanist (headings) */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:wght@100..900&display=swap");
+
+/* Loads Tailwind so utility classes work */
 @import "tailwindcss";
 
+/* Our own theme values: "font-sans" and "font-serif" classes use these fonts */
 @theme {
-    --color-bg: #fafafa;
-    --color-text: #111111;
     --font-sans: "Outfit", sans-serif;
     --font-serif: "Urbanist", sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* nav links like #pricing scroll smoothly */
 }
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: #fafafa;
+    color: #111111;
     font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
+/* Tailwind v4 no longer shows a pointer cursor on buttons, so we add it back */
 button {
     cursor: pointer;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background: #ddd;
-    border-radius: 99px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #bbb;
 }
